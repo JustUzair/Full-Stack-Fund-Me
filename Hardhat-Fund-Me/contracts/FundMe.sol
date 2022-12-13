@@ -79,3 +79,7 @@ contract FundMe {
         return s_priceFeed;
     }
 }
+
+//Pending : https://youtu.be/gyMwXuJrbJQ?t=45438
+
+//contract-deploy-address-goerli : 0x17f7Cc2cd7C39D6EEcecD080c25c44313034B247
