@@ -79,5 +79,3 @@ contract FundMe {
         return s_priceFeed;
     }
 }
-
-//Pending : 5:55:44
