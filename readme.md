@@ -1,4 +1,4 @@
-Test Net used : goerli
+# Test Net used : goerli
 
 # Important
 
