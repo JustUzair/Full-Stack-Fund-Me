@@ -1,6 +1,7 @@
 Test Net used : goerli
 
-#Important
+# Important
+
 Create a 'constants.js' file in Html-FundMe folder
 
 - add the contract abi from compiled contract
