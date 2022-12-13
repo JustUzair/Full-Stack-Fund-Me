@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fund Me | Solidity</title>
+    <style>
+      .hidden {
+        display: none;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    Fund Me
+
+    <button id="connect">Connect Wallet</button>
+    <button id="fund">Fund</button>
+    <button id="withdraw">Withdraw</button>
+    <label for="fund">ETH Amount</label>
+
+    <input type="text" placeholder="0.005 ETH" id="ethAmount" />
+    <button id="getBalance">Get Balance</button>
+    <input type="text" placeholder="? ETH" id="balance" disabled />
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
