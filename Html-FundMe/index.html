@@ -3,23 +3,80 @@
   <head>
     <title>Fund Me | Solidity</title>
     <style>
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        background: #252525;
+      }
       .hidden {
         display: none;
         visibility: hidden;
       }
+      h1 {
+        font-size: 10rem;
+        text-align: center;
+        color: aliceblue;
+      }
+      label {
+        color: aliceblue;
+        font-size: 1.7rem;
+      }
+      .fundme--container {
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      button {
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background: aliceblue;
+        color: #353434;
+        cursor: pointer;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+      input[type="text"] {
+        margin-bottom: 10px;
+        font-size: 2rem;
+        border: none;
+        border-radius: 10px;
+        padding: 2px 10px;
+        background-color: #353434;
+        color: #fff;
+      }
+      .get--balance {
+        display: flex;
+        justify-content: space-between;
+      }
+      .connect {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+      }
     </style>
   </head>
   <body>
-    Fund Me
+    <h1>Fund Me</h1>
 
-    <button id="connect">Connect Wallet</button>
-    <button id="fund">Fund</button>
-    <button id="withdraw">Withdraw</button>
-    <label for="fund">ETH Amount</label>
+    <div class="fundme--container">
+      <button id="connect">Connect Wallet</button>
+      <br />
+      <label for="fund">ETH Amount</label>
+      <input type="text" placeholder="0.005 ETH" id="ethAmount" />
+      <button id="fund">Fund</button>
+      <br />
 
-    <input type="text" placeholder="0.005 ETH" id="ethAmount" />
-    <button id="getBalance">Get Balance</button>
-    <input type="text" placeholder="? ETH" id="balance" disabled />
+      <div class="get--balance">
+        <button id="getBalance">Get Balance</button>
+        <input type="text" placeholder="? ETH" id="balance" disabled />
+      </div>
+      <br />
+      <button id="withdraw">Withdraw</button>
+    </div>
 
     <script src="./index.js" type="module"></script>
   </body>
